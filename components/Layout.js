@@ -29,16 +29,8 @@ export default function Layout({ children }) {
                 📝 ALL Posts
               </Link>
             </li>
-            <li>
-              <Link href="/categories">
-                📁 Categories
-              </Link>
-            </li>
-            <li>
-              <Link href="/tags">
-                🏷️ Tags
-              </Link>
-            </li>
+            
+           
             <li>
               <Link href="/authors">
                 👥 Authors

@@ -6,7 +6,8 @@ export const posts = [
     content: "Next.js is a powerful React framework that enables server-side rendering, static site generation, and more. In this post, we'll explore the fundamental concepts...",
     author: "John Doe",
     date: "2024-02-01",
-    category: "Tutorial"
+    category: "Tutorial",
+    
   },
   {
     id: 2,

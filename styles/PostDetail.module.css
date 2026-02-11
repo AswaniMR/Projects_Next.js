@@ -191,31 +191,3 @@
   font-size: 1.5rem;
   color: #667eea;
 }
-
-/* 
-@media (max-width: 768px) {
-  .container {
-    padding: 1rem;
-  }
-
-  .postCard {
-    padding: 2rem 1.5rem;
-  }
-
-  .title {
-    font-size: 2rem;
-  }
-
-  .content {
-    font-size: 1rem;
-  }
-
-  .meta {
-    gap: 1rem;
-  }
-
-  .backButton {
-    padding: 0.6rem 1rem;
-    font-size: 0.9rem;
-  }
-} */

@@ -1,35 +1,31 @@
-import styles from '../styles/About.module.css'
+import { posts } from '../data/posts'
 
-export default function About({ timestamp }) {
+export default function About({ posts }) {
   return (
-    <div className={styles.container}>
-      <h1 className={styles.title}>About This Blog</h1>
-      
-      <div className={styles.content}>
-        <p className={styles.intro}>
-          This is a demonstration blog built with Next.js to showcase:
+    <div className="about-container">
+      <h1 className="about-title">About This Blog</h1>
+
+      <div className="about-content">
+        <p className="about-intro">
+          This blog contains {posts.length} articles written by our authors.
         </p>
-        
-        <ul className={styles.list}>
-          <li>Static Generation with getStaticProps</li>
-          <li>Server-Side Rendering with getServerSideProps</li>
-          <li>Dynamic Routing</li>
-          <li>API Routes</li>
-          <li>CSS Module Styling</li>
+
+        <ul className="about-list">
+          {posts.map((post) => (
+            <li key={post.id}>
+              <strong>{post.title}</strong> — {post.content}
+            </li>
+          ))}
         </ul>
-        
-        <p className={styles.timestamp}>
-          <strong>Server-Side Rendered:</strong> This page was rendered at: {timestamp}
-        </p>
       </div>
     </div>
   )
 }
 
-export async function getServerSideProps() {
+export async function getStaticProps() {
   return {
     props: {
-      timestamp: new Date().toISOString()
+      posts
     }
   }
 }
