@@ -1,4 +1,4 @@
-import { posts } from '../../../data/postss';
+import { posts } from '../../../data/posts';
 
 export default function handler(req, res) {
   const { id } = req.query;
